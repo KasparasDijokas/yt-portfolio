@@ -1,0 +1,27 @@
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  padding-top: 12px;
+  transition: all ease-in 0.4s;
+  z-index: 3;
+  background-color: #fff;
+  position: absolute;
+  left: -240px;
+
+  & hr {
+    height: 1px;
+    border: 0;
+    background-color: lightgray;
+    margin: 10px 0;
+  }
+
+  &.show {
+    left: 0;
+  }
+
+  @media (min-width: 624px) {
+    position: static;
+    left: 0;
+    width: 260px;
+  }
+}
